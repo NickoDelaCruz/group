@@ -4,15 +4,15 @@
 
 <br>
 
-<h4>BRANDS:</h4>
+<h1>BRANDS:</h1>
 
 <br>
 
-  <ul id="list">
+  <ol id="list">
     <% @brands.each do |brand| %>
       <li> <a href="/brand_main/<%= brand.id %>"><%= brand.name %></a> </li>
     <% end %>
-  </ul>
+  </ol>
 
   <h1>Add Brand:</h1>
   <form action="/brand_main" method="post">

@@ -1,11 +1,11 @@
 <h1> STORE MAIN </h1>
 
 <h1>STORES: </h4>
-<ul>
+<ol>
   <% @stores.each do |store| %>
     <li> <a href="/store_main/<%= store.id %>"><%= store.name %></a> <a href="/store_main/<%= store.id %>/edit">EDIT</a></li>
   <% end %>
-</ul>
+</ol>
 <br>
 
 <h1>ADD:</h1>

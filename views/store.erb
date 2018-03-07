@@ -1,11 +1,11 @@
-<h2><%= @store.name %></h2>
+<h1><%= @store.name %></h1>
 <br>
 
-<ul>
+<ol>
   <% @store.brands.each do |brand| %>
     <li> <%= brand.name %> <%= "$#{'%.2f' % (brand.price.to_f/100)}" %></li>
   <% end %>
-</ul>
+</ol>
 <br>
 <form action="/store_main/<%= @store.id %>/brands" method="post">
   <label for="brand">BRAND:</label>
