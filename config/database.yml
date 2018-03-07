@@ -1,0 +1,16 @@
+development:
+  adapter: postgresql
+  database: shoe_store_development
+  username: befatal
+  password: happy123
+  pool: 5
+  timeout: 5000
+
+
+test:
+  adapter: postgresql
+  database: shoe_store_test
+  username: befatal
+  password: happy123
+  pool: 5
+  timeout: 5000
