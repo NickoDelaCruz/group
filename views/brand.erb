@@ -1,7 +1,12 @@
-<h1>Name: <%= @brand.name %></h1>
-<h1>Price: <%= "$#{'%.2f' % (@brand.price.to_f/100)}" %></h1>
-<br>
-<a href="/brand_main">BRANDS</a>
-<a href="/store_main">STORES</a>
 
-<a href="/home">home</a>
+<h1>Name: <%= @brand.name %></h1>
+
+<h1>Price: <%= "$#{'%.2f' % (@brand.price.to_f/100)}" %></h1>
+
+
+<br>
+<a href="/brand_main">|BRANDS|</a>
+<br>
+<a href="/store_main">|STORES|</a>
+<br>
+<a href="/home">|HOME|</a>

@@ -39,14 +39,22 @@ H1 { text-align: center }
 ol { text-align: center }
 a { text-align: center }
 
+
+
 ol li{
-  list-style-type: none;
-  color:blue;
+  background: lightblue;
+  margin-bottom: 10px;
+  color: white;
+
+}
+
+body {
+  color: black;
 }
 
 form {
   text-align: center;
-  text-shadow: black;
+
 }
 
 html {
