@@ -19,4 +19,8 @@ describe(Brand) do
     brand = Brand.new({:price => ''})
     expect(brand.save).to(eq(false))
   end
+it("Checks if name is 100 Characters") do
+  brand = Brand.new({:name => "a".*(9000)})
+  expect(brand.save()).to(eq(false))
+  end
 end
