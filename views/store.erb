@@ -8,7 +8,7 @@
 </ol>
 <br>
 <form action="/store_main/<%= @store.id %>/brands" method="post">
-  <label for="brand">BRAND:</label>
+  <label for="brand">Brand:</label>
   <select id='brand' name='brand' type='text'>
     <% @brands.each do |brand| %>
       <option value="<%= brand.id%>"> <%= brand.name %> </option>
