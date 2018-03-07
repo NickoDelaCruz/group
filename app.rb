@@ -26,6 +26,11 @@ get('/brands/:id') do
   erb(:brand)
 end
 
+get('/brands/:id') do
+  @brand = Brand.find(params['id'].to_i)
+  erb(:brand)
+end
+
 # get('/store_main') do
 #   erb(:store_main)
 # end
