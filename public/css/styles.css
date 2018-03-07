@@ -1,4 +1,4 @@
-ol {
+/* ol {
     background: #ff9999;
     padding: 20px;
 }
@@ -17,4 +17,25 @@ ol li {
 ul li {
     background: #cce5ff;
     margin: 5px;
+} */
+
+a:link {
+    background-color: yellow;
+}
+
+a:visited {
+    background-color: cyan;
+}
+
+a:hover {
+    background-color: lightgreen;
+}
+
+a:active {
+    background-color: hotpink;
+}
+
+
+html {
+  background-color: salmon;
 }
