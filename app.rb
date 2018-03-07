@@ -43,3 +43,8 @@ get('/store_main/:id') do
   @brands = Brand.all
   erb(:store)
 end
+
+get('/store_main/:id/edit') do
+  @store = Store.find(params['id'].to_i)
+  erb(:store_edit)
+end

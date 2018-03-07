@@ -1,0 +1,23 @@
+<h2><%= @store.name %></h2>
+<br>
+
+<ul>
+  <% @store.brands.each do |brand| %>
+    <li> <%= brand.name %> <%= "$#{'%.2f' % (brand.price.to_f/100)}" %></li>
+  <% end %>
+</ul>
+<br>
+<form action="/stores/<%= @store.id %>/brands" method="post">
+  <label for="brand">BRAND:</label>
+  <select id='brand' name='brand' type='text'>
+    <% @brands.each do |brand| %>
+      <option value="<%= brand.id%>"> <%= brand.name %> </option>
+    <% end %>
+  </select>
+
+  <button type="submit">ADD</button>
+</form>
+
+<br>
+<a href="/brands_main">BRANDS</a>
+<a href="/stores_main">STORE</a>
