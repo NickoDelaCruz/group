@@ -5,8 +5,8 @@ describe(Store) do
 
   describe '#capitalize_letter' do
     it("capitalizes the first letter of each word in the name") do
-      store = Store.create({:name => 'the shoe store'})
-      expect(store.name).to(eq('The Shoe Store'))
+      store = Store.create({:name => 'the north face'})
+      expect(store.name).to(eq('The North Face'))
     end
   end
 
