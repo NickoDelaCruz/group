@@ -31,3 +31,15 @@ get('/store_main') do
   @stores = Store.all
   erb(:store_main)
 end
+
+post('/store_main') do
+  name = params['name']
+  @store = Store.find_or_create_by({:name => name})
+  redirect("/store_main/".concat(@store.id.to_s))
+end
+
+get('/store_main/:id') do
+  @store = Store.find(params['id'].to_i)
+  @brands = Brand.all
+  erb(:store)
+end
