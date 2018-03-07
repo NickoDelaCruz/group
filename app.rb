@@ -6,9 +6,5 @@ Dir[File.dirname(__FILE__) + '/lib/*.rb'].each { |file| require file }
 
 
 get('/') do
-  erb(:index)
-end
-
-get('/') do
-  erb(:index)
+  erb(:home)
 end
