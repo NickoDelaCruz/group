@@ -27,7 +27,7 @@ get('/brand_main/:id') do
 end
 
 
-
-# get('/store_main') do
-#   erb(:store_main)
-# end
+get('/store_main') do
+  @stores = Store.all
+  erb(:store_main)
+end
