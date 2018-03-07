@@ -9,6 +9,10 @@ get('/') do
   erb(:home)
 end
 
+get('/home') do
+  erb(:home)
+end
+
 get('/store_main') do
   @stores = Store.all
   erb(:store_main)
