@@ -21,15 +21,12 @@ post('/brand_main') do
   redirect("/brand_main/".concat(brand.id.to_s))
 end
 
-get('/brands/:id') do
+get('/brand_main/:id') do
   @brand = Brand.find(params['id'].to_i)
   erb(:brand)
 end
 
-get('/brands/:id') do
-  @brand = Brand.find(params['id'].to_i)
-  erb(:brand)
-end
+
 
 # get('/store_main') do
 #   erb(:store_main)
